@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frames Example</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<style>
+
+.body, html 
+{
+    height: 100%;
+    margin: 0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 100%;
+  }
+  
+  .contents, .body, .remarks {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .contents {
+    background-color: #f2f2f2;
+  }
+  
+  .remarks {
+    background-color: #f2f2f2;
+  }
+  
+  .audio-container, .video-container {
+    margin-bottom: 10px;
+  }
+  
+  </style>
+
+<body>
+  <div class="grid-container">
+    <div class="contents">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#section1">Introduction</a></li>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+      </ul>
+    </div>
+    <div class="body">
+      <h1>Web Page Body</h1>
+      <p>Content of the web page goes here...</p>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+      <video width="320" height="240" controls>
+        <source src="W3Schools HTML Tutorial 01 - Introduction.mp4" type="video/mp4">
+      </video>
+      <h2 id="section1">Section 1</h2>
+      <p>Content of Section 1...</p>
+      <h2 id="section2">Section 2</h2>
+      <p>Content of Section 2...</p>
+    </div>
+    <div class="remarks">
+      <h2>Remarks</h2>
+      <p>Additional remarks and comments go here...</p>
+    </div>
+  </div>
+</body>
+</html>
